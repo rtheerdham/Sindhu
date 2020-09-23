@@ -1,0 +1,41 @@
+
+.header{
+   margin-bottom: 2px;
+}
+
+
+.portfolio__heading{
+    font-weight: bold;
+    text-align: center;
+    color:black;
+    
+    text-decoration:underline;
+    position: relative;;
+    top:10%;
+    margin-bottom: 100px;
+    display:flex;
+   
+    justify-content: center;
+}
+
+.portheading{
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    text-shadow: 3px 3px black;
+    margin-top:5px;
+    text-decoration:underline;
+   
+
+}
+
+.portfolio__body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio__gallery{
+    display: flex;
+    align-content: center;
+}

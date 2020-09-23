@@ -1,0 +1,256 @@
+*{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.Welcome{
+  height: 100vh;
+  width:100vw; 
+    background:url("./../images/bg4.jpg"); 
+    text-align: center;
+    display:table-cell;
+    vertical-align: middle;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-snap-align: start;
+ 
+  
+  }
+
+  .welcome__about{
+    scroll-snap-align: start;
+    height: 100vh;
+  }
+  
+  .welcome__portfolio{
+    scroll-snap-align: start;
+    height: 100vh;
+  }
+
+  .welcome__contact{
+    scroll-snap-align: start;
+    height: 100vh;
+  }
+  .fade-enter {
+    opacity: 0.01;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 800ms ease-in;
+  }
+  
+  .faded{
+    position: relative;
+    overflow:hidden;
+    z-index: 1;
+  }
+
+  .faded:before{
+    content:'';
+    position: absolute;
+    left:20%;
+    width:20%;
+    height:100%;
+    background:linear-gradient(90deg,transparent 0%,#000 5%,#000 100%);
+    animation:animate7 5.5s linear forwards;
+  }
+
+  @keyframes animate7{
+    0%{
+      left:40%;
+    }
+    100%{
+      left:100%;
+    }
+  }
+  .greeting {
+    padding: 20px;
+    background-color: #ccc;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    border-radius: 4px;
+  }
+.Welcome  >p{
+   transition:5s;
+    font-size:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-weight:bold;
+    text-shadow: white;     
+  }
+
+  .welcomeclass{
+    margin:0;
+    padding:0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+  }
+  
+  .Welcome>p>span{
+  color: purple;
+  font-style: italic;
+  }
+  
+  .Welcome    >button{
+    margin-top:30px;
+    padding:20px;
+    color:white;
+    font-size: large;
+   
+    position: relative;
+    background:rgba(255,255,255,0.1);
+    box-shadow:0 5px 5px rgba(0,0,0,0.2);
+    transition:0.5s;
+    overflow: hidden;
+    
+  }
+  
+  
+
+  button::before{
+    content:' ';
+    position: absolute;
+    top:2px;
+    left:2px;
+    bottom:2px;
+    width:50%;
+    height:100%;
+    background:rgba(255,255,255,0.1)
+  }
+
+  button:hover::after{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0%;
+    height:100%;
+    width:100%;
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+    transition:0.5s;
+  }
+
+  button span:nth-child(1)
+  {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:2px;
+    background:linear-gradient(to right,white,black);
+    animation:animate1 2s linear infinite;
+    animation-delay: 1s;
+  }
+
+  @keyframes animate1{
+    0%{
+      transform:translateX(-100%);
+    }
+    100%{
+      transform:translateX(100%);
+    }
+  }
+
+  button span:nth-child(2)
+  {
+    position: absolute;
+    top:0;
+    right:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(to right,white,black);
+    animation:animate2 2s linear infinite;
+  }
+
+  @keyframes animate2{
+    0%{
+      transform:translateY(-100%);
+    }
+    100%{
+      transform:translateY(100%);
+    }
+  }
+
+  button span:nth-child(3)
+  {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:2px;
+    background:linear-gradient(to right,white,black);
+    animation:animate3 2s linear infinite;
+  }
+
+  @keyframes animate3{
+    0%{
+      transform:translateX(100%);
+    }
+    100%{
+      transform:translateX(-100%);
+    }
+  }
+
+  button span:nth-child(4)
+  {
+    position: absolute;
+    top:0;
+    left:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(to right,white,black);
+    animation:animate4 2s linear infinite;
+    animation-delay: 1s;
+  }
+
+  @keyframes animate4{
+    0%{
+      transform:translateY(100%);
+    }
+    100%{
+      transform:translateY(-100%);
+    }
+  }
+  
+  
+  .Welcome    >button>.MuiSvgIcon-root:hover{
+    transform: rotate(90deg);
+  }
+  
+  .example-enter {
+    opacity: 0.01;
+  }
+  
+  .example-enter.example-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  
+  .example-leave {
+    opacity: 1;
+  }
+  
+  .example-leave.example-leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+  }
+  
+  

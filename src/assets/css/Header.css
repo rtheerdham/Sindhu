@@ -1,0 +1,32 @@
+.header__body{
+    position: sticky;
+    top:0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+.Header{
+    background-color: black; 
+    display:flex;
+    justify-content: space-around;
+
+}
+
+
+.Header > a{
+    padding:20px;
+    color:white;
+    text-decoration:none;
+   
+}
+
+.Header > a:hover{
+    color: darkmagenta;
+}
+
+.active{
+    background-color:red;
+}
+
+
+
