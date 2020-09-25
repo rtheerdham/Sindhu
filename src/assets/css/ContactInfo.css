@@ -22,6 +22,105 @@
 
 }
 
+.contactInfo__gmailInfo{
+    position: absolute;
+    top:100%;
+    
+    padding: 10px;
+    
+}
+
+.contactInfo__linkInfo{
+    position: absolute;
+    top:30%;
+    right: 100%;
+    padding: 10px;
+
+}
+
+.contactInfo__linkInfo a{
+    text-decoration: none;
+}
+
+.contactInfo__locInfo{
+    position: absolute;
+    top:30%;
+    left:100%;
+    padding: 10px;
+    
+}
+
+.contactInfo__gitInfo{
+    position: absolute;  
+    bottom: 100%;
+    
+    
+}
+
+.contactInfo__gitInfo a{
+    text-decoration: none;
+}
+
+.contactInfo__gith1,.contactInfo__gith2{
+    color: transparent;
+}
+
+.circle ul:hover .contactInfo__gith1{
+    color: black;
+}
+
+.circle ul:hover .contactInfo__gitInfo a{
+    text-decoration: underline;
+    
+}
+
+.circle ul:hover .contactInfo__gith2{
+    color: black;
+}
+
+.contactInfo__linkh1,.contactInfo__linkh2{
+    color: transparent;
+}
+
+.circle ul:hover .contactInfo__linkh1{
+    color: black;
+}
+
+.circle ul:hover .contactInfo__linkInfo a{
+    text-decoration: underline;
+}
+
+.circle ul:hover .contactInfo__linkh2{
+    color: black;
+}
+
+
+.contactInfo__loch1,.contactInfo__loch2{
+    color: transparent;
+}
+
+.circle ul:hover .contactInfo__loch1{
+    color: black;
+}
+
+.circle ul:hover .contactInfo__loch2{
+    color: black;
+}
+
+.contactInfo__gmailInfo .contactInfo__h1,.contactInfo__gmailInfo .contactInfo__h2{
+    color: transparent;
+}
+
+
+.circle ul:hover .contactInfo__h1{
+    color: black;
+}
+
+.circle ul:hover .contactInfo__h2{
+    color: #000;
+}
+
+
 .contactInfo__body{
     height: 100vh;
 }
@@ -52,6 +151,8 @@
     transform:scale(1) rotate(0deg);
 }
 
+
+
 .circle ul li{
     position: absolute;
     list-style: none;
@@ -81,10 +182,18 @@
     transform :translateY(-50%);
 }
 
+.circle ul li:nth-child(2):hover .contactInfo__gmailInfo .contactInfo__h1{
+    color: black;
+}
+
+
+
 .circle ul li:hover .icon{
     transform: scale(2);
     color:#f44336
 }
+
+
 
 .circle ul:before{
     content: '';
